@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# System files
+.DS_Store
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
