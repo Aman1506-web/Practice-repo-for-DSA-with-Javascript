@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Check console for Output</h1>
+  <!-- link your js file here -->
+  <script src="./five.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- Perfect 👌 Let’s break this down clearly step-by-step so you understand exactly how these files (package.json, package-lock.json, and node_modules) were created and how prompt-sync got installed.
+
+🧩 Step 1: Initialize Node.js project
+
+Inside your folder video4, you ran this command:
+
+npm init -y
+
+
+What this does:
+
+Creates a new file called package.json
+
+Adds default project info (name, version, main file, etc.)
+
+The -y flag means “yes to all defaults”
+
+📦 Result created:
+
+package.json
+
+⚙️ Step 2: Install a package (like prompt-sync)
+
+After initializing, you installed prompt-sync using:
+
+npm install prompt-sync
+
+
+What happens now:
+
+It downloads the prompt-sync package from npm registry.
+
+It creates a folder called node_modules where it stores all installed packages.
+
+It also creates a package-lock.json file to lock exact versions (for consistency).
+
+📦 Results created:
+
+node_modules/       ← contains prompt-sync and its dependencies
+package-lock.json   ← records exact versions
+
+📘 Step 3: Using prompt-sync in your JS file
+
+Then, in your third.js, you probably wrote:
+
+const prompt = require("prompt-sync")();
+let name = prompt("Enter your name: ");
+console.log("Hello " + name);
+
+
+That’s how prompt-sync allows you to take user input in Node.js.
+
+🧠 Summary (Easy Flow)
+Step	Command	Purpose	Files Created
+1	npm init -y	Initialize Node.js project	package.json
+2	npm install prompt-sync	Install prompt-sync package	node_modules/, package-lock.json
+3	use require("prompt-sync")()	Import package in JS	— -->
