@@ -9,7 +9,7 @@
 //   arr.push(n);
 // }
 // console.log(arr);
-// so this was wrong bcoz array length is not fixed each time u push an element it gets added to the back of array and length keeps on increasing 
+// so this was wrong bcoz array length is not fixed each time u push an element it gets added to the back of array and length keeps on increasing
 
 // let prompt = require("prompt-sync")();
 // let arr = new Array(5);
@@ -20,9 +20,7 @@
 
 // console.log(arr)
 
-
-
-// sum of array in a element 
+// sum of array in a element
 
 // let prompt = require("prompt-sync")();
 // let arr = new Array(5)
@@ -58,17 +56,56 @@
 // console.log(`Minimum element is ${min}`)
 
 // Find 2nd Max and Max in an array
-let arr = [10,30,40,40,40]
+// let arr = [10,30,40,40,40]
 
-let max = Math.max(arr[0], arr[1]);
-let sMax = Math.min(arr[0], arr[1]);
+// let max = Math.max(arr[0], arr[1]);
+// let sMax = Math.min(arr[0], arr[1]);
 
-for(let i =2; i< arr.length; i++){
-  if(arr[i] > max){
-    sMax = max
-    max = arr[i]
-  }else if(arr[i] > sMax && arr[i] !== max){
-    sMax = arr[i]
-  }
-}
-console.log(`The max no. is ${max} and second max is ${sMax}`);
+// for(let i =2; i< arr.length; i++){
+//   if(arr[i] > max){
+//     sMax = max
+//     max = arr[i]
+//   }else if(arr[i] > sMax && arr[i] !== max){
+//     sMax = arr[i]
+//   }
+// }
+// console.log(`The max no. is ${max} and second max is ${sMax}`);
+
+// find 2nd max element in an array adn max also
+// let arr = [10,20,30,30,30,90];
+
+// let max = Math.max(arr[0], arr[1]); // 20
+// let sMax = Math.min(arr[0], arr[1]); //10
+
+// // maintain max and min initially
+// for(let i =2; i < arr.length; i++){
+//   if(arr[i] > max){
+//     sMax = max; // 20
+//     max = arr[i] // 30
+//   }else if(arr[i] > sMax && arr[i] !== max){
+//     sMax = arr[i];
+//   }
+// }
+
+// console.log(`The max is ${max} and second max is ${sMax}`)
+
+// find Minimum and second Minimum in an array
+// let arr = [10,10,10,10,10,1,2];
+
+// let min = Math.min(arr[0], arr[1]);
+// let sMin = Math.max(arr[0], arr[1]);
+
+// for (let i = 2; i < arr.length; i++) {
+//   if (arr[i] < min) {
+//     sMin = min;
+//     min = arr[i];
+//   }else if(arr[i] < sMin && arr[i] !== min){
+//     sMin = arr[i]
+//   }
+// }
+
+// if(min === sMin){
+//   console.log("there is no second minimum element in this array. All elements are equal ")
+//   return;
+// }
+// console.log(`The min element in this array is ${min} and second min is ${sMin}`)
