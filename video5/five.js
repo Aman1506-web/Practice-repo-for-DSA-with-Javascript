@@ -109,3 +109,31 @@
 //   return;
 // }
 // console.log(`The min element in this array is ${min} and second min is ${sMin}`)
+
+// Reverse the array
+// 1st method
+// let arr = [10, 20, 30, 40, 50, 60, 70];
+// let temp = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   temp.push(arr[i]);
+//   // push adds element to the end
+// }
+// console.log(temp);
+// console.log(arr);
+
+// 2nd method
+let arr = [10,20,30,40,50,60,70,80,90]
+
+// concept is replace in that array only . No extra array needed
+let i =0; // first element
+let j = arr.length -1; // last element
+
+while(i < j ){
+  let temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+  i++;
+  j--;
+}
+
+console.log(arr)
