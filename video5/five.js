@@ -122,18 +122,40 @@
 // console.log(arr);
 
 // 2nd method
-let arr = [10,20,30,40,50,60,70,80,90]
+// let arr = [10,20,30,40,50,60,70,80,90]
 
-// concept is replace in that array only . No extra array needed
-let i =0; // first element
-let j = arr.length -1; // last element
+// // concept is replace in that array only . No extra array needed
+// let i =0; // first element
+// let j = arr.length -1; // last element
 
-while(i < j ){
-  let temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-  i++;
-  j--;
+// while(i < j ){
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+//   i++;
+//   j--;
+// }
+
+// console.log(arr)
+
+
+// all zeros on left and all 1s on right
+let arr = [1, 1, 0, 1, 0, 1, 1, 0, 0]
+
+let i = 0;
+let j = 0;
+
+// on swap position element of i will swap with position element of j
+while(i< arr.length){
+  if(arr[i] === 0){
+    //swap i and j
+    let temp = arr[i] // temp = 0
+    arr[i] = arr[j] // arr[i] = 1
+    arr[j] = temp // arr[j] = 0
+    j++ // j at 2nd one
+    // if i is here then that means i++ only when arr[i] = 0 otheriwse not
+  }
+  i++ // thats why i is here
 }
 
 console.log(arr)
